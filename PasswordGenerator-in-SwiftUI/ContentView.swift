@@ -29,35 +29,39 @@ struct ContentView: View {
                 )
                 HStack {
                     Button(action: {
+                        /* possibility to add :
+                         self.generatorData.labelText = self.generatorData.character[.random(in: 0...self.generatorData.character.count)] but out of rang after 7 generator.
+                         Possibility to extra in subview as a ButtonView BUT doesnt generate the array after that.
+                         */
                         self.generatorData.labelText = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText2 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText3 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText4 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText5 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText6 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText7 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText8 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText9 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText10 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText11 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText12 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText13 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText14 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText15 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText16 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText17 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText18 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText19 = self.generatorData.character[.random(in: 0...64)]
-                        self.generatorData.labelText20 = self.generatorData.character[.random(in: 0...64)]
-                    }) {
-                        Text(K.buttonTitle)
-                            .font(.system(size: 28))
-                            .fontWeight(.heavy)
-                            .foregroundColor(.white)
-                            .background(Color.black)
-                            .cornerRadius(25)
-                            .padding(.horizontal)
-                    }
+                            self.generatorData.labelText2 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText3 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText4 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText5 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText6 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText7 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText8 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText9 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText10 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText11 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText12 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText13 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText14 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText15 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText16 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText17 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText18 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText19 = self.generatorData.character[.random(in: 0...64)]
+                            self.generatorData.labelText20 = self.generatorData.character[.random(in: 0...64)]
+                        }) {
+                            Text(K.buttonTitle)
+                                .font(.system(size: 28))
+                                .fontWeight(.heavy)
+                                .foregroundColor(.white)
+                                .background(Color.black)
+                                .cornerRadius(25)
+                                .padding(.horizontal)
+                        }
                     Button(action: {
                         UIPasteboard.general.string =
                             self.generatorData.labelText + self.generatorData.labelText2 + self.generatorData.labelText3 + self.generatorData.labelText4 + self.generatorData.labelText5 + self.generatorData.labelText6 + self.generatorData.labelText7 + self.generatorData.labelText8 + self.generatorData.labelText9 + self.generatorData.labelText10 + self.generatorData.labelText11 + self.generatorData.labelText12 + self.generatorData.labelText13 + self.generatorData.labelText14 + self.generatorData.labelText15 + self.generatorData.labelText16 + self.generatorData.labelText17 + self.generatorData.labelText18 + self.generatorData.labelText19 + self.generatorData.labelText20
@@ -82,4 +86,6 @@ struct ContentView_Previews: PreviewProvider {
         //.previewDevice(PreviewDevice(rawValue: "iPhone Xs"))
     }
 }
+
+
 
